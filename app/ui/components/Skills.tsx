@@ -16,7 +16,7 @@ export default function Skills(){
 						height={24}
 						className=" size-5 transform transition-transform ease-in group-hover:-translate-y-1"
 					/>
-					<p className=" text-xs text-gray-400">{skill.name}</p>
+					<p className=" text-xs text-zinc-500">{skill.name}</p>
 				</div>
 			))}
 		</div>

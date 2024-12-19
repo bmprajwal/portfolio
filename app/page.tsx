@@ -8,18 +8,47 @@ import TypingHighlight from "./ui/components/TypingHighlight";
 export default function Page() {
 	return (
 		<div>
-			<div className=" relative">
+			<div className=" group relative overflow-hidden">
+				<Image
+					src={"/clouds.png"}
+					alt="clouds"
+					width={200}
+					height={200}
+					className=" group-hover:opacity-0 transition-opacity duration-500 size-full absolute top-0 right-0 animate-move-clouds opacity-20"
+				/>
+				<Image
+					src={"/plane.webp"}
+					alt="plane"
+					width={24}
+					height={56}
+					className="group-hover:opacity-0 transition-opacity duration-500 absolute animate-plane -bottom-20 -right-20 "
+				/>
+				<Image
+					src={"/plane-shadow.webp"}
+					alt="plane"
+					width={24}
+					height={24}
+					className="group-hover:opacity-0 transition-opacity duration-500 absolute animate-plane-shadow  -bottom-24 -right-20 "
+				/>
 				<AnimatedMap />
+
 				<div className=" h-16 bg-gradient-to-t from-[#060606] to-transparent absolute bottom-0 w-full "></div>
 			</div>
 			<div className=" flex w-full mb-6 gap-5 items-center">
-				<div className=" border-2 rounded-full border-gray-500 relative">
+				<div className=" group border-2 rounded-full border-gray-500 relative cursor-pointer">
 					<Image
 						src="/profilePic.jpeg"
 						alt="Profile Pic"
 						height={70}
 						width={70}
 						className=" rounded-full p-1"
+					/>
+					<Image
+						src="/glasses.png"
+						alt="glasses"
+						height={70}
+						width={70}
+						className=" absolute size-8 top-2 right-[18px] rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
 					/>
 				</div>
 				<div className="space-y-1">
@@ -50,20 +79,20 @@ export default function Page() {
 			</div>
 			<div>
 				<p>
-					I like to develop full-stack web applications, write backend
-					logics & love to explore to make my hands dirty on the
-					technologies!
+					I'm a full-stack web developer who loves to explore new tech
+					and get my hands dirty with it. Blockchain fascinates me,
+					and when I'm not coding, I find inspiration in movies.
 				</p>
 			</div>
 			<Skills />
 			<div className=" my-16">
-				<div className=" text-xs inline-block px-3 py-1 text-zinc-400 bg-zinc-700 rounded">
+				<div className=" text-xs inline-block px-3 py-1 text-zinc-300 bg-zinc-700 rounded">
 					Fun
 				</div>
 				<TypingHighlight />
 			</div>
 			<div className=" my-16">
-				<div className=" text-xs inline-block px-3 py-1 text-zinc-400 bg-zinc-700 rounded">
+				<div className=" text-xs inline-block px-3 py-1 text-zinc-300 bg-zinc-700 rounded">
 					Recent Projects
 				</div>
 			</div>
