@@ -28,7 +28,7 @@ export default function TypingHighlight() {
 					userInput[index] === char ? "text-white" : "text-red-500";
 			}
 			return (
-				<span key={index} className={`text-base ${color}`}>
+				<span key={index} className={`text-sm ${color}`}>
 					{char}
 				</span>
 			);
@@ -37,9 +37,9 @@ export default function TypingHighlight() {
 
 	return (
       <div className="w-full mt-4 max-w-2xl rounded-lg shadow-lg p-7 border border-zinc-700 relative">
-        <div className="overflow-hidden">
-          <p className="text-sm whitespace-nowrap">
-            {renderReferenceText()}
+        <div className="overflow-hidden pr-24">
+          <p className="text-sm  break-words">
+        {renderReferenceText()}
           </p>
         </div>
         <input
@@ -47,12 +47,12 @@ export default function TypingHighlight() {
           type="text"
           value={userInput}
           onChange={handleInputChange}
-          className="w-full py-5 px-3 mt-2 text-sm bg-zinc-800 text-white rounded border-2 border-zinc-500 border-zinc-350 focus:outline-none relative"
+          className="w-full py-5 px-3 mt-2 text-sm  bg-zinc-800 text-white rounded border-2 border-zinc-500 border-zinc-350 focus:outline-none relative"
           placeholder="Start typing here"
           aria-label="Type the sentence"
           maxLength={REFERENCE_TEXT.length}
         />
-        <Image src="/bongoCat.png" width={90} height={90} alt="Bongo Cat" className="absolute top-3 right-8 -z-10 mt-2 mr-2 -rotate-12"/>
+        <Image src="/bongoCat.png" width={90} height={90} alt="Bongo Cat" className="absolute top-7 right-8 sm:top-3 sm:right-8 -z-10 mt-2 mr-2 -rotate-12"/>
       </div>
 	);
 }
