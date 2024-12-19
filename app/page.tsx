@@ -79,9 +79,10 @@ export default function Page() {
 			</div>
 			<div>
 				<p>
-					I'm a full-stack web developer who loves to explore new tech
-					and get my hands dirty with it. Blockchain fascinates me,
-					and when I'm not coding, I find inspiration in movies.
+					I&apos;m a full-stack web developer who loves to explore new
+					tech and get my hands dirty with it. Blockchain fascinates
+					me, and when I&apos;m not coding, I find inspiration in
+					movies.
 				</p>
 			</div>
 			<Skills />

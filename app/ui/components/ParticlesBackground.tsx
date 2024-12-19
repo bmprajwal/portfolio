@@ -2,7 +2,6 @@
 import { useEffect, useMemo, useState, ReactNode } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
-  type Container,
   type ISourceOptions,
   MoveDirection,
   OutMode,
