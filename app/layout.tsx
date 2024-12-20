@@ -34,8 +34,8 @@ export default function RootLayout({
 								<Link className=" px-2 py-1" href={"/projects"}>
 									projects
 								</Link>
-								<Link className=" px-2 py-1" href={"/contact"}>
-									contact
+								<Link className=" px-2 py-1" href={"/visitors"}>
+									visitors
 								</Link>
 							</nav>
 						</aside>

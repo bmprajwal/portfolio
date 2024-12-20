@@ -17,24 +17,25 @@ export default function RecentProjects(){
 							height={100}
 							className=" border border-zinc-700 rounded-md"
 						/>
-						<h1 className=" text-lg mt-1">Portfolio</h1>
+						<h1 className=" text-lg mt-1 font-semibold">Portfolio</h1>
 						<p className=" text-sm mt-1.5">
 							A simple portfolio website with some interactions
 						</p>
 					</Link>
 				</div>
 				<div className="w-full mt-4 max-w-2xl rounded-lg p-5 border border-zinc-700  shadow-inside hover:shadow-inside-hover transition-all duration-500">
-					<Link href={"https://acme-dash.vercel.app"}>
+					<Link href={"https://mediumstories.vercel.app"}>
 						<Image
-							src={"/projects/dashboard.png"}
+							src={"/projects/medium.png"}
 							alt="dashboard project"
 							width={320}
 							height={130}
 							className=" border border-zinc-700 rounded-md"
 						/>
-						<h1 className=" text-lg mt-1">Acme Dashboard</h1>
+						<h1 className=" text-lg mt-1 font-semibold">Medium Stories</h1>
 						<p className=" text-sm mt-1.5">
-							A dashboard for invoices with CRUD
+							Blogging website with React frontend and Cloudflare
+							Workers backend
 						</p>
 					</Link>
 				</div>
@@ -43,20 +44,20 @@ export default function RecentProjects(){
 				<Link href={"/projects"}>
 					<div className=" flex items-center gap-1">
 						<p className=" text-sm font-semibold">More Projects</p>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								strokeWidth="1.5"
-								stroke="currentColor"
-								className="size-5  transition-all group-hover:translate-x-1"
-							>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-								/>
-							</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth="1.5"
+							stroke="currentColor"
+							className="size-5  transition-all group-hover:translate-x-1"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+							/>
+						</svg>
 					</div>
 				</Link>
 			</div>
