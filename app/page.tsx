@@ -4,6 +4,7 @@ import Link from "next/link";
 import MailIcon from "./ui/components/MailIcon";
 import Skills from "./ui/components/Skills";
 import TypingHighlight from "./ui/components/TypingHighlight";
+import RecentProjects from "./ui/components/RecentProjects";
 
 export default function Page() {
 	return (
@@ -92,11 +93,7 @@ export default function Page() {
 				</div>
 				<TypingHighlight />
 			</div>
-			<div className=" my-16">
-				<div className=" text-xs inline-block px-3 py-1 text-zinc-300 bg-zinc-700 rounded">
-					Recent Projects
-				</div>
-			</div>
+			<RecentProjects/>
 		</div>
 	);
 }

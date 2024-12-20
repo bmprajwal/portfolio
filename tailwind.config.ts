@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "inside": "inset 0 0 15px 0 rgba(255,255,255, 0.2)",
+        "inside-hover": "inset 0 0 40px 0 rgba(255,255,255, 0.2)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
